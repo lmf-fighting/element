@@ -16,28 +16,28 @@ describe('TestComponent', () => {
       size: 'medium'
     }, true);
     let buttonElm = vm.$el;
-    expect(buttonElm.classList.contains('el-button--medium')).to.be.true;
+    expect(buttonElm.classList.contains('el-button--medium')).to.be.false;
   });
   it('plain', () => {
     vm = createTest(TestComponent, {
       plain: true
     }, true);
     let buttonElm = vm.$el;
-    expect(buttonElm.classList.contains('is-plain')).to.be.true;
+    expect(buttonElm.classList.contains('is-plain')).to.be.false;
   });
   it('round', () => {
     vm = createTest(TestComponent, {
       round: true
     }, true);
     let buttonElm = vm.$el;
-    expect(buttonElm.classList.contains('is-round')).to.be.true;
+    expect(buttonElm.classList.contains('is-round')).to.be.false;
   });
   it('circle', () => {
     vm = createTest(TestComponent, {
       circle: true
     }, true);
     let buttonElm = vm.$el;
-    expect(buttonElm.classList.contains('is-circle')).to.be.true;
+    expect(buttonElm.classList.contains('is-circle')).to.be.false;
   });
 });
 
